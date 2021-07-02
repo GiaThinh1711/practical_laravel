@@ -14,6 +14,6 @@ class ApartmentSeeder extends Seeder
      */
     public function run()
     {
-        Apratment::factory()->count(20)->create();
+        Apratment::factory(6)->count(20)->create();
     }
 }

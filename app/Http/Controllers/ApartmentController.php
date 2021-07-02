@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ApartmentController extends Controller
 {
     public function all(){
-        $part = Apratment::all();
-        return view("home");
+        $part = Apratment::paginate(6);
+        return view("home",['part'=> $part]);
     }
 }
